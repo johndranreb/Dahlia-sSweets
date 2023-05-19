@@ -232,7 +232,6 @@
   margin-bottom: -80px;
 }
 
-
 .flex {
   display: flex;
 }
@@ -603,11 +602,10 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  
 }
 
 .available-now-0:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
 
@@ -643,7 +641,7 @@ p {
 }
 
 .hmCake:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
 
@@ -700,10 +698,9 @@ p {
 }
 
 .pop1:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
-
 
 /* We serve onliner*/
 .online-img {
@@ -765,7 +762,7 @@ p {
 }
 
 .online-img:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
 
@@ -773,7 +770,6 @@ p {
 #say {
   padding-top: 100px;
   padding-bottom: 200px;
-
 }
 #say-what {
   width: 619px;
@@ -814,12 +810,10 @@ p {
   justify-content: flex-start;
 }
 
-
 .say-:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
-
 
 .say-h3 {
   width: 127px;
@@ -841,10 +835,9 @@ p {
   align-items: center;
   margin-left: 300px;
   text-align: center;
-  
 }
 
-.lt{
+.lt {
   border: 1px solid black;
   background-color: var(--primary-color);
   border-radius: 30px;
@@ -853,7 +846,7 @@ p {
   padding-top: 10px;
 }
 
-.gt{
+.gt {
   border: 1px solid black;
   background-color: var(--primary-color);
   border-radius: 30px;
@@ -899,7 +892,6 @@ p {
   background: rgba(202, 180, 167, 0.6);
 }
 
-
 .say-hover {
   white-space: nowrap;
   font-size: 15px;
@@ -925,7 +917,6 @@ p {
   transform: scale(100) translateX(2px);
   transition: all 0.5s ease-in-out;
 }
-
 
 /*Discount*/
 #discount {
@@ -1008,10 +999,8 @@ p {
   width: 700px;
   height: 600px;
   object-fit: cover;
-margin-right: 100%;
+  margin-right: 100%;
 }
-
-
 
 .book {
   position: relative;
@@ -1077,13 +1066,10 @@ p {
   font-weight: bolder;
 }
 
-
 .image-cake:hover img {
   transform: scale(1.1); /* Increase the scale value as desired */
   transition: transform 0.4s ease;
 }
-
-
 
 /* Footer */
 footer {
