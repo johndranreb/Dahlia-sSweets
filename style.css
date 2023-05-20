@@ -459,7 +459,7 @@ button:hover::after {
 }
 
 .perfect {
-  margin-top: -100px;
+  margin-top: -200px;
 }
 .peCa {
   font-size: 90px;
@@ -493,11 +493,11 @@ button:hover::after {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 90%;
+  min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
   z-index: -1;
   filter: brightness(1);
+  object-fit: cover;
 }
 
 .perfect {
@@ -588,7 +588,6 @@ p {
 }
 .available-now-0 {
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -602,6 +601,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 30px;
 }
 
 .available-now-0:hover img {
@@ -770,6 +770,7 @@ p {
 #say {
   padding-top: 100px;
   padding-bottom: 200px;
+  margin-left: 10%;
 }
 #say-what {
   width: 619px;
@@ -796,7 +797,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
   padding: 24px 50px;
   gap: 16px;
   width: 516px;
@@ -808,6 +808,7 @@ p {
   order: 0;
   flex-grow: 0;
   justify-content: flex-start;
+  object-fit: cover;
 }
 
 .say-:hover img {
@@ -818,7 +819,6 @@ p {
 .say-h3 {
   width: 127px;
   height: 39px;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -862,6 +862,7 @@ p {
   line-height: 60px;
   align-items: center;
   text-align: center;
+
 }
 
 .dot1 {
@@ -1113,4 +1114,8 @@ footer {
 
 .foot a:hover {
   color: white;
+}
+
+.discord{
+
 }
