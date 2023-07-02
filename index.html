@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon-32x32.png"
+      href="./images/favicon-32x32-min.png"
     />
     <title>Dahlia's Sweets</title>
     <link rel="stylesheet" href="style.css" />
@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script src="main.js" defer></script>
   </head>
 
   <body>
@@ -32,7 +33,7 @@
         <div class="nav-brand">
           <a href="#"
             ><img
-              src="./images/Dahlialogo.png"
+              src="./images/Dahlialogo-min.png"
               alt="Dahlia's Sweets Logo"
               class="logo"
               loading="lazy"
@@ -47,44 +48,44 @@
           </label>
         </div>
         <ul class="nav-menu">
-          <li>Home</li>
+          <li><a href="#">Home</a></li>
           <li class="dropdown">
-            Events
+            <a href="#popular">Events</a>
             <ul class="dropdown-menu">
-              <li>Birthdays</li>
-              <li>Weddings</li>
-              <li>Christenings</li>
-              <li>Anniversaries</li>
-              <li>Baby Shower</li>
-              <li>Others</li>
+              <li><a href="#popular">Birthdays</a></li>
+              <li><a href="#popular">Weddings</a></li>
+              <li><a href="#popular">Christenings</a></li>
+              <li><a href="#popular">Anniversaries</a></li>
+              <li><a href="#popular">Baby Shower</a></li>
+              <li><a href="#popular">Others</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            Menu
+            <a href="#avail-now"></a>Menu
             <ul class="dropdown-menu">
-              <li>Cakes</li>
-              <li>Brownies</li>
-              <li>Donuts</li>
-              <li>Muffins</li>
-              <li>Coffee</li>
-              <li>Beverages</li>
-              <li>Croisant</li>
-              <li>Macaroons</li>
+              <li><a href="#avail-now">Cakes</a></li>
+              <li><a href="#avail-now">Brownies</a></li>
+              <li><a href="#avail-now">Donuts</a></li>
+              <li><a href="#avail-now">Muffins</a></li>
+              <li><a href="#avail-now">Coffee</a></li>
+              <li><a href="#avail-now">Beverage</a>s</li>
+              <li><a href="#avail-now">Croisant</a></li>
+              <li><a href="#avail-now">Macaroons</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            About
+            <a href="#history"></a>About
             <ul class="dropdown-menu">
-              <li>Meet Our Team</li>
-              <li>Our History</li>
-              <li>Community Baking</li>
+              <li><a href="#history">Our History</a></li>
             </ul>
           </li>
-          <li>Contact Us</li>
+          <li><a href="#contact-US">Contact Us</a></li>
           <li><i class="fa-solid fa-cart-shopping"></i></li>
           <li><i class="fa-solid fa-user"></i></li>
           <li>
-            <button class="btn">Sign Up</button>
+            <button class="btn flex justify-content align-items flex">
+              Sign Up
+            </button>
           </li>
         </ul>
       </div>
@@ -93,27 +94,27 @@
     <!--Hero-->
     <main>
       <section id="hero">
-        <div class="container flex">
+        <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-6"></div>
-            <div class="perfect">
-              <h1>
-                <span class="peCa">Perfect Cake</span>&nbsp;&nbsp;
-                <span class="for">for</span>&nbsp;&nbsp;
-                <span class="peDay">Perfect day</span>
-              </h1>
-              <p class="special">
-                Specially made for you with a secret recipe and love&comma;
-                which make every bite so delicious.
-              </p>
+            <div class="col-12">
+              <div class="perfect">
+                <h1>
+                  <span class="peCa">Perfect Cake for</span>
+
+                  <span class="peDay">Perfect day</span>
+                </h1>
+                <p class="special">
+                  Specially made for you with a secret recipe and love&comma;
+                  which make every bite so delicious.
+                </p>
+                <button class="order-now align-items justify-content flex">
+                  Order Now
+                </button>
+              </div>
             </div>
-            <button class="order-now">Order Now</button>
             <div class="hero-video">
               <video autoplay loop muted>
-                <source
-                  src="./video/mixkit-appetizing-little-chocolate-cake-41106.mp4"
-                  type="video/mp4"
-                />
+                <source src="./video/herovideo.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -121,64 +122,80 @@
       </section>
 
       <!--Avail now-->
-      <section id="avail-now" class="py-32">
+      <section id="avail-now" class="">
         <div class="container">
           <div>
             <div class="availnow">
-              <h2 class="a-now">Available Now</h2>
+              <h2 class="a-now ">Available Now</h2>
               <p class="food-choices">Food menu choices in our shop</p>
-            </div>
-          </div>
+
+              <div class="discount-card-container">
+                <a href="#popup" class="discount-card">Get 10% off!</a>
+              </div>
+              
+              <div id="popup" class="popup">
+                <div class="popup-content">
+                  <h2>Special Discount</h2>
+                  <p>Use the code <span id="D-ten"> "DISCOUNT10"</span> to get 10% off your purchase!</p>
+                  <a href="#avail-now" class="close-btn">Close</a>
+                </div>
+              </div>
+              
+          
           <div class="row avail">
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
-                  src="./images/parastoo-jk-P68yv6bC2pI-unsplash.jpg"
+                  src="./images/cakes.jpg"
                   alt="cake"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Cakes</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
-                  src="./images/jr-r-90HdOlGbjck-unsplash.jpg"
+                  src="./images/muffins.jpg"
                   alt="muffin"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Muffins</h3>
-                <button class="buy">Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
-                  src="./images/annie-spratt-EACvtuV2k2E-unsplash.jpg"
+                  src="./images/donuts.jpg"
                   alt="donut"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Donuts</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
-                  src="./images/pexels-esra-afşar-15385723.jpg"
+                  src="./images/croisant.jpg"
                   alt="croisant"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Croissant</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
                   src="./images/brownies.jpg"
@@ -187,22 +204,24 @@
                   loading="lazy"
                 />
                 <h3 class="aNow">Brownies</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
-                  src="./images/cafe.jpg"
+                  src="./images/coffee.jpg"
                   alt="Cafe & Beverages"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Coffee</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
                   src="./images/beverages.jpg"
@@ -211,10 +230,11 @@
                   loading="lazy"
                 />
                 <h3 class="aNow">Beverages</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
               <div class="available-now-0">
                 <img
                   src="./images/Macaroons.jpg"
@@ -223,7 +243,8 @@
                   loading="lazy"
                 />
                 <h3 class="aNow">Macaroons</h3>
-                <button>Buy</button>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
           </div>
@@ -237,21 +258,34 @@
             <div class="col-12 col-lg-4">
               <div class="hmCake">
                 <img
-                  src="./images/cakeworke.jpg"
+                  src="./images/handmade.jpg"
                   alt="handmade cake"
-                  class="hm-cake"
+                  id="hm-cake"
                   loading="lazy"
                 />
               </div>
             </div>
             <div class="col-12 col-lg-8">
               <div class="HMcake">
-                <h2 class="hmcake flex">Handmade Cakes For Your Every Taste</h2>
+                <h2 class="hmcake">Handmade Cakes For Your Every Taste</h2>
                 <p class="literature">
                   Literature is a cake with many toys baked inside and even if
                   you find them all, if you don’t enjoy the path that leads you
                   to them, it will be a hollow accomplishment” -Cam &apos; ron
                 </p>
+                
+                <div class="discount-card-container">
+                  <a href="#popup" class="discount-card">Get 10% off!</a>
+                </div>
+                
+                <div id="popup" class="popup">
+                  <div class="popup-content">
+                    <h2>Special Discount</h2>
+                    <p>Use the code <span id="D-ten"> "DISCOUNT10"</span> to get 10% off your purchase!</p>
+                    <a href="#avail-now" class="close-btn">Close</a>
+                  </div>
+                </div>
+      
               </div>
             </div>
           </div>
@@ -259,63 +293,68 @@
       </section>
 
       <!--Popular Events-->
-      <section id="popular" class="py-32">
+      <section id="popular">
         <div class="container">
-          <h2 id="pop">Popular Events</h2>
+          <h2 class="pop">Popular Events</h2>
           <p id="pop-menu">
             List of meals at the restaurant and also the price
           </p>
           <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="pop1">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
                 <img
-                  src="./images/bdaycake.jpg"
+                  src="./images/bdaycake-min.jpg"
                   alt="Birthday Cake"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Birthday</h3>
                 <button>Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="pop1">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
                 <img
-                  src="./images/anniversay.jpg"
+                  src="./images/anniversay-min.jpg"
                   alt="Anniversary Cake"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Anniversay</h3>
                 <button>Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="pop1">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
                 <img
-                  src="./images/christening.jpg"
+                  src="./images/christening-min.jpg"
                   alt="Christening Cake"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Christening</h3>
                 <button>Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="pop1">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
                 <img
-                  src="./images/weddingcake1.jpg"
+                  src="./images/weddingcake1-min.jpg"
                   alt="Wedding Cake"
                   class="img-availnow"
                   loading="lazy"
                 />
                 <h3 class="aNow">Wedding</h3>
                 <button>Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
 
       <!--We serve online-->
@@ -325,18 +364,19 @@
             <div class="col-12 col-sm-6 col-lg-6">
               <div class="">
                 <h2 class="online-h2 flex">We serve online orders</h2>
-                <p class="online-p">
+                <p class="online-p flex">
                   Order food online namely the process of ordering food through
                   the website or the eating application itself. Customers can
                   choose the food ordered or taken.
                 </p>
-                <button class="button-online">Order Now</button>
+                
+                <button class="Onow">Order Now</button>
               </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-6">
               <div class="online-img">
                 <img
-                  src="./images/pexels-anna-nekrashevich-7552742.jpg"
+                  src="./images/online.jpg"
                   alt="Online Ordering"
                   class="online-img"
                   loading="lazy"
@@ -347,97 +387,174 @@
         </div>
       </section>
 
-      <!--What do they say-->
-      <section id="say" class="py-32 flex">
-        <div class="container">
-          <h2 id="say-what">What do they say</h2>
-          <div class="say-icon">
-            <i class="fa-solid fa-less-than lt say-hover"></i>
-            <i class="fa-solid fa-greater-than gt say-hover"></i>
-          </div>
-          <div class="dots flex">
-            <div class="dot1"></div>
-            <div class="dot2"></div>
-            <div class="dot3"></div>
-            <div class="dot4"></div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-6">
-              <div class="say-0">
-                <img
-                  src="./images/happygirl.jpg"
-                  alt="girl"
-                  class="img-say flex"
-                  loading="lazy"
-                />
-                <h3 class="say-h3">Jane Doe</h3>
-                <p>
-                  &quot; I am very satisfied with the shop service and the price
-                  is not expensive&quot;
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-6">
-              <div class="say-0">
-                <img
-                  src="./images/pexels-jeffrey-reed-769745.jpg"
-                  alt="man"
-                  class="img-say"
-                  loading="lazy"
-                />
-                <h3 class="say-h3">John Doe</h3>
-                <p>
-                  &quot; The service at this shop is very friendly and the cake
-                  is guaranteed delicious.&quot;
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Discount -->
-      <section id="discount" class="py-32">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-6">
-              <div class="book">
-                <div class="inputContainer">
-                  <p class="DiscountSubheading">
-                    Here is your discount! The promo code will be sent to your
-                    email.
-                  </p>
-                  <input
-                    placeholder="Enter your email"
-                    type="email"
-                    name="email"
-                    id="email-address"
-                  />
-                  <button type="submit" class="submitButton">Get it!</button>
-
-                  <div class="cover">
-                    <p></p>
-                    <form class="discountForm">
-                      <span class="DiscountHeading">TAKE 20&percnt; OFF.</span>
-                      <p>
-                        Satisfy your dessert cravings while saving big with our
-                        Short Cake Discount! Delight in the perfect harmony of
-                        moist cake, velvety cream, and succulent berries, all at
-                        a price that will make your taste buds dance with joy.
-                      </p>
-                      <p style="color: #a52a2a">Hover to get the discount.</p>
-                    </form>
+      
+      <!--History -->
+ <section class="page-section" id="history">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Our History</h2>
+      </div>
+      <ul class="timeline">
+          <li>
+              <div class="timeline-image"><img class="timeline-image" src="./images/history.jpg" alt="History Image"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>August 1993</h4>
                   </div>
-                </div>
+                  <div class="timeline-body"><p class="text-muted">Dahlia's Sweets, a beloved confectionery paradise, began its delightful journey in 1993. Founded with a passion for creating mouthwatering treats, Dahlia's Sweets quickly captured the hearts of dessert enthusiasts far and wide. </p></div>
               </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image"><img class=" timeline-image" src="./images/usa.jpg" alt="Restaurant"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>1998</h4>
+                  <div class="timeline-body"><p class="text-muted">
+                    In the year 1998, Dahlia's Sweets expanded its reach and opened a branch in sunny California, USA.</p></div>
+              </div>
+          </li>
+          <li>
+              <div class="timeline-image"><img class=" timeline-image" src="./images/international.jpg" alt="Different Flags"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>2010</h4>
+                  <div class="timeline-body"><p class="text-muted">
+                    In the year 2010, Dahlia's Sweets embarked on an exciting international expansion, opening branches in the Philippines, Spain, Australia, and Dubai.</p></div>
+              </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image"><img class="timeline-image" src="./images/globe.jpg" alt="Globe"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>Present</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">As of the present day, Dahlia's Sweets has successfully established itself with an impressive presence, boasting 22 branches worldwide. From its humble beginnings in 1993 to its current global reach, Dahlia's Sweets continues to bring joy and delight to sweet lovers across the globe.</p></div>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+
+
+      <!--What do they say-->
+      <section id="say" class="flex">
+        <div class="container">
+          <h2 class="pop">What do they say</h2>
+          <div class="slider">
+            <input type="radio" name="testimonial" id="t-1" />
+            <input type="radio" name="testimonial" id="t-2" />
+            <input type="radio" name="testimonial" id="t-3" checked />
+            <input type="radio" name="testimonial" id="t-4" />
+            <input type="radio" name="testimonial" id="t-5" />
+            <div class="testimonials">
+              <label class="item" for="t-1">
+                <img
+                  src="./images/johndoe.jpg"
+                  alt="man"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">John Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Dahlia's Sweets shop offers an exquisite array of
+                  delectable treats that are beautifully crafted and simply melt
+                  in your mouth. &quot;
+                </p>
+              </label>
+              <label class="item" for="t-2">
+                <img
+                  src="./images/janedoe.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Jane Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;The friendly staff at Dahlia's Sweets shop creates a
+                  warm and welcoming atmosphere, making every visit a delightful
+                  experience.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-3">
+                <img
+                  src="./images/andrea smith.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Andrea Smith</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;I can't resist the temptation of the freshly baked
+                  pastries at Dahlia's Sweets shop; they are always perfectly
+                  golden, flaky, and utterly delicious.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-4">
+                <img
+                  src="./images/Catherine Parks.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Catherine Parks</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Dahlia's Sweets shop not only satisfies my sweet tooth
+                  but also surpasses my expectations with their exceptional
+                  service and consistently outstanding desserts.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-5">
+                <img
+                  src="./images/Jason Doe.jpg"
+                  alt="man"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Jason Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;The flavors at Dahlia's Sweets shop are simply divine;
+                  their unique combinations and attention to detail set them
+                  apart from other dessert shops in town.&quot;
+                </p>
+              </label>
             </div>
-            <div class="image-cake">
-              <img
-                src="./images/cake-2818729_1920-removebg-preview.png"
-                alt="Cakes"
-                id="book-cake"
-                loading="lazy"
-              />
+            <br />
+            <div class="dots">
+              <label for="t-1"></label>
+              <label for="t-2"></label>
+              <label for="t-3"></label>
+              <label for="t-4"></label>
+              <label for="t-5"></label>
             </div>
           </div>
         </div>
@@ -445,12 +562,12 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="py-32">
+   <footer id="footer">
       <div class="container">
         <div class="row">
-          <div class="foot col-12 col-sm-6 col-lg-3">
+          <div class="foot col-12 col-sm-6 col-lg-4 col-xl-3">
             <img
-              src="./images/Dahlialogo.png"
+              src="./images/Dahlialogo-min.png"
               alt=""
               class="footer-logo"
               loading="lazy"
@@ -460,47 +577,55 @@
               support what you do." &mdash; Cise Star
             </p>
           </div>
-          <div class="foot about col-12 col-sm-6 col-lg-3">
+          <div class="foot about col-12 col-sm-6 col-lg-4 col-xl-3">
             <div>About</div>
             <a href="#">Meet Our Team</a>
-            <a href="#">Our History</a>
+            <a href="#history">Our History</a>
             <a href="#">Community Baking</a>
           </div>
-          <div class="foot our col-12 col-sm-6 col-lg-3">
+          <div class="foot our col-12 col-sm-6 col-lg-4 col-xl-3">
             <div>Social</div>
-            <a href="#"
+            <a href="https://facebook.com" target="_blank"
               ><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a
             >
-            <a href="#"
+            <a href="https://www.instagram.com/" target="_blank"
               ><i class="fa-brands fa-square-instagram"></i
               >&nbsp;&nbsp;Instagram</a
             >
-            <a href="#"
+            <a href="https://www.linkedin.com/" target="_blank"
               ><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Linkedin</a
             >
-            <a href="#"
+            <a href="https://twitter.com/" target="_blank"
               ><i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;Twitter</a
             >
-            <a href="#"
+            <a href="https://discord.com/" target="_blank"
               ><i class="fa-brands fa-discord discord"></i>&nbsp;Discord</a
             >
           </div>
-          <div class="foot contact col-12 col-sm-6 col-lg-3">
-            <div>Contact Us</div>
-            <a href="#"
+          <div class="foot contact col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div id="contact-US">Contact Us</div>
+            <a href="mailto:dahliassweets@domain.com"
               ><i class="fa-solid fa-envelope"></i>
               &nbsp;dahliassweets@domain.com</a
             >
-            <a href="#"
+            <a href="https://www.google.com/maps" target="_blank"
               ><i class="fa-solid fa-map-location-dot"></i> &nbsp;128 Wall
               Street, UK, London</a
             >
-            <a href="#"
+            <a href="tel:+0643321233"
               ><i class="fa-solid fa-phone-volume"></i>&nbsp; (064) 332-1233</a
             >
           </div>
         </div>
       </div>
     </footer>
-  </body>
+
+  <!-- Footer Bottom -->
+  <p>
+    <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+    <span class="nowrap">Dahlia's Sweets</span>
+</p>
+
+</footer>
+</body>
 </html>
